@@ -221,6 +221,10 @@
     color: #000000;
 }
 
+.row {
+    margin: 0 auto;
+}
+
 header.row {
     background: #ffffff url('../img/logo.png') no-repeat center top;
     padding-top: 15px;
@@ -248,3 +252,147 @@ header.row a {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+nav.col-lg-12 {
+    padding: 0;
+}
+
+.title-background {
+    height: 515px;
+    width: 100%;
+    margin-top: -15px;
+    margin-bottom: 50px;
+    padding: 0;
+    background: url(../img/main_bg/welcome.png) no-repeat center 80px,
+                url(../img/main_bg/georgeous.png) no-repeat center 135px,
+                url(../img/main_bg/sedona.png) no-repeat center 220px,
+                url(../img/main_bg/because.png) no-repeat center 350px,
+                url(../img/main_bg/lines.png) no-repeat center 150px,
+                url(../img/main_bg/logo_part.png) no-repeat top center,
+                url(../img/main_bg/poloska.png) no-repeat center bottom,
+                url(../img/main_bg/bg.jpg) 50% 20% no-repeat;
+}
+
+.slogan {
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.slogan h2 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.slogan span {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 100;
+}
+
+.feature-one {
+    padding: 0;
+    padding-top: 50px;
+    color: #ffffff;
+    background-color: #81b3d2;
+    height: 255px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.feature-one h2 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    width: 150px;
+    margin: 0 auto 25px auto;
+}
+
+.feature-one span {
+    position: relative;
+}
+
+.feature-one span::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: #ffffff;
+    right: 25px;
+    top: 50%;
+}
+
+.feature-one span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: #ffffff;
+    left: 25px;
+    top: 50%;
+}
+
+.feature-one p {
+    width: 285px;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 100;
+}
+
+.feature-one-pic {
+    padding: 0;
+}
+
+.feature-one-pic img {
+    width: 100%;
+}
+
+.trick {
+    padding: 0;
+    text-align: center;
+}
+
+.trick-first h2::before {
+    content: '';
+    display: block;
+    background: url(../img/spritesheet.png);
+    width: 75px;
+    height: 72px;
+    background-position: -15px -960px;
+    margin: 0 auto;
+}
+
+.trick-second h2::before {
+    content: '';
+    display: block;
+    background: url(../img/spritesheet.png);
+    width: 74px;
+    height: 70px;
+    background-position: -15px -674px;
+    margin: 0 auto;
+}
+
+.trick-third h2::before {
+    content: '';
+    display: block;
+    background: url(../img/spritesheet.png);
+    width: 64px;
+    height: 76px;
+    background-position: -15px -774px;
+    margin: 0 auto;
+}
+
+.sprite-gift {
+    width: 64px;
+    height: 76px;
+    background-position: -15px -774px;
+}
+

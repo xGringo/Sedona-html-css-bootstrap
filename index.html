@@ -5,12 +5,12 @@
 	<title>Sedona</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="container">
 	<header class="row">
-		<nav>
+		<nav class="col-lg-12">
 			<ul>
 				<li class="col-lg-3"><a href="#">Информация</a></li>
 				<li class="col-lg-3"><a href="#">Фото и видео</a></li>
@@ -21,40 +21,44 @@
 	</header>
 
 	<main>
-		<section>
-			<!-- здесь будет фон -->
+		<section class="row">
+			<div class="title-background col-lg-1">
+				<!-- здесь будет фон -->
+			</div>
 		</section>
 
-		<section>
-			<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-			<span>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</span>
+		<section class="row">
+			<div class="col-lg-6 col-lg-offset-3 slogan">
+				<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+				<span>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</span>
+			</div>
 		</section>
 
-		<section>
-			<div>
+		<section class="row">
+			<div class="col-lg-4 feature-one">
 				<h2>Настоящий городок</h2>
 				<span>№1</span>
-				<p>Седона - не аттракцион для туристов, там течёт своя жизнь.</p>
+				<p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
 			</div>
 
-			<div>
+			<div class="col-lg-8 feature-one-pic">
 				<img src="img/content_pic_1.jpg" alt="Городок Седона" width="800" height="255">
 			</div>
 		</section>
 
-		<section>
-			<div>
-				<p><strong>Жильё</strong></p>
+		<section class="row">
+			<div class="col-lg-4 trick-first trick">
+				<h2>Жильё</h2>
 				<span>Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
 			</div>
 
-			<div>
-				<p><strong>Еда</strong></p>
+			<div class="col-lg-4 trick-second trick">
+				<h2>Еда</h2>
 				<span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
 			</div>
 
-			<div>
-				<p><strong>Сувениры</strong></p>
+			<div class="col-lg-4 trick-third trick">
+				<h2>Сувениры</h2>
 				<span>Не только китайского, но и местного производства!</span>
 			</div>
 		</section>
