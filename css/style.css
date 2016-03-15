@@ -1,0 +1,250 @@
+=========================== sprite =======================================*/
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-2_stars {
+    width: 42px;
+    height: 17px;
+    background-position: -15px -15px;
+}
+
+.sprite-3_stars {
+    width: 65px;
+    height: 17px;
+    background-position: -15px -62px;
+}
+
+.sprite-4_stars {
+    width: 89px;
+    height: 17px;
+    background-position: -15px -109px;
+}
+
+.sprite-balack_arrow_up {
+    width: 11px;
+    height: 10px;
+    background-position: -15px -156px;
+}
+
+.sprite-balck_arrow_down {
+    width: 11px;
+    height: 10px;
+    background-position: -15px -196px;
+}
+
+.sprite-blue_arrow_down {
+    width: 11px;
+    height: 10px;
+    background-position: -15px -236px;
+}
+
+.sprite-blue_arrow_up {
+    width: 11px;
+    height: 10px;
+    background-position: -15px -276px;
+}
+
+.sprite-check_active {
+    width: 26px;
+    height: 22px;
+    background-position: -15px -316px;
+}
+
+.sprite-check_white {
+    width: 26px;
+    height: 22px;
+    background-position: -15px -368px;
+}
+
+.sprite-day {
+    width: 21px;
+    height: 22px;
+    background-position: -15px -420px;
+}
+
+.sprite-day_black {
+    width: 21px;
+    height: 22px;
+    background-position: -15px -472px;
+}
+
+.sprite-day_blue {
+    width: 21px;
+    height: 22px;
+    background-position: -15px -524px;
+}
+
+.sprite-fb {
+    width: 10px;
+    height: 19px;
+    background-position: -15px -576px;
+}
+
+.sprite-fb_dark {
+    width: 10px;
+    height: 19px;
+    background-position: -15px -625px;
+}
+
+.sprite-gamburger {
+    width: 74px;
+    height: 70px;
+    background-position: -15px -674px;
+}
+
+.sprite-gift {
+    width: 64px;
+    height: 76px;
+    background-position: -15px -774px;
+}
+
+.sprite-grey_arrow_down {
+    width: 11px;
+    height: 10px;
+    background-position: -15px -880px;
+}
+
+.sprite-grey_arrow_up {
+    width: 11px;
+    height: 10px;
+    background-position: -15px -920px;
+}
+
+.sprite-house {
+    width: 75px;
+    height: 72px;
+    background-position: -15px -960px;
+}
+
+.sprite-htmlacademy {
+    width: 113px;
+    height: 39px;
+    background-position: -15px -1062px;
+}
+
+.sprite-htmlacademy_blue {
+    width: 113px;
+    height: 39px;
+    background-position: -15px -1131px;
+}
+
+.sprite-htmlacademy_grey {
+    width: 113px;
+    height: 39px;
+    background-position: -15px -1200px;
+}
+
+.sprite-minus_black {
+    width: 12px;
+    height: 3px;
+    background-position: -15px -1269px;
+}
+
+.sprite-minus_blue {
+    width: 12px;
+    height: 3px;
+    background-position: -15px -1302px;
+}
+
+.sprite-minus_grey {
+    width: 12px;
+    height: 3px;
+    background-position: -15px -1335px;
+}
+
+.sprite-not_checked {
+    width: 22px;
+    height: 22px;
+    background-position: -15px -1368px;
+}
+
+.sprite-not_checked_active {
+    width: 22px;
+    height: 22px;
+    background-position: -15px -1420px;
+}
+
+.sprite-plus_black {
+    width: 11px;
+    height: 11px;
+    background-position: -15px -1472px;
+}
+
+.sprite-plus_blue {
+    width: 11px;
+    height: 11px;
+    background-position: -15px -1513px;
+}
+
+.sprite-plus_grey {
+    width: 11px;
+    height: 11px;
+    background-position: -15px -1554px;
+}
+
+.sprite-twitter {
+    width: 17px;
+    height: 15px;
+    background-position: -15px -1595px;
+}
+
+.sprite-twitter_dark {
+    width: 17px;
+    height: 15px;
+    background-position: -15px -1640px;
+}
+
+.sprite-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -15px -1685px;
+}
+
+.sprite-youtube_dark {
+    width: 20px;
+    height: 16px;
+    background-position: -15px -1731px;
+}
+
+/*========================= end sprite =========================================*/
+
+* {
+    outline: 1px solid red;
+}
+
+.container {
+    font-family: 'PT Sans', Arial, sans-serif;
+    color: #000000;
+}
+
+header.row {
+    background: #ffffff url('../img/logo.png') no-repeat center top;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+header.row ul {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header.row li {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    text-align: center;
+}
+
+header.row a {
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
