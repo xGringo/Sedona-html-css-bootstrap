@@ -212,13 +212,11 @@
 
 /*========================= end sprite =========================================*/
 
-/** {
-    outline: 1px solid red;
-}
-*/
 .container {
     font-family: 'PT Sans', Arial, sans-serif;
     color: #000000;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .row {
@@ -226,7 +224,6 @@
 }
 
 header.row {
-    background: #ffffff url('../img/logo.png') no-repeat center top;
     padding-top: 15px;
     padding-bottom: 30px;
 }
@@ -253,7 +250,19 @@ header.row a {
     text-transform: uppercase;
 }
 
-nav.col-lg-12 {
+header .logo-container {
+    position: relative;
+    font-size: 18px;
+}
+
+.logo {
+    position: absolute;
+    left: 15%;
+    top: -15px;
+    z-index: 99;
+}
+
+.col-md-12 {
     padding: 0;
 }
 
@@ -263,13 +272,8 @@ nav.col-lg-12 {
     margin-top: -15px;
     margin-bottom: 50px;
     padding: 0;
-    background: url(../img/main_bg/welcome.png) no-repeat center 80px,
-                url(../img/main_bg/georgeous.png) no-repeat center 135px,
-                url(../img/main_bg/sedona.png) no-repeat center 220px,
-                url(../img/main_bg/because.png) no-repeat center 350px,
-                url(../img/main_bg/lines.png) no-repeat center 150px,
-                url(../img/main_bg/logo_part.png) no-repeat top center,
-                url(../img/main_bg/poloska.png) no-repeat center bottom,
+    background: url(../img/main_bg/letters.png) center center no-repeat,
+                url(../img/main_bg/poloska.png) center bottom no-repeat,
                 url(../img/main_bg/bg.jpg) 50% 20% no-repeat;
 }
 
@@ -633,5 +637,42 @@ nav.col-lg-12 {
     margin: 0 auto;
 }
 
+/*========================================*/
 
+* {
+    outline: 1px solid red;
+}
 
+/*====================================*/
+/*================ PAGE 2 ============*/
+
+.form-area {
+    background: url(../img/filler_bg.jpg) no-repeat center center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.list-left {
+    padding-left: 73px;
+}
+
+.list-left ul,
+.list-right ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-left h2,
+.list-right h2 {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.list-left label,
+.list-right label {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 100;
+}

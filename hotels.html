@@ -5,50 +5,57 @@
 	<title>Hotels</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<header>
-		<nav>
+<body class="container">
+	<header class="row">
+		<nav class="col-md-12">
 			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостинницы</a></li>
+				<li class="col-md-2 col-md-offset-1 mobile-hide"><a href="#">Информация</a></li>
+				<li class="col-md-2 mobile-hide"><a href="#">Фото и видео</a></li>
+				<li class="col-md-2 logo-container mobile-hide"><img class="logo" src="img/logo.png" alt=""></li>
+				<li class="col-md-2 mobile-hide"><a href="#">Карта штата</a></li>
+				<li class="col-md-2 mobile-hide"><a href="#">Гостинницы</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
-		<section>
-			<form action="#" method="post">
-				<div>
-					<h2>Инфраструктура:</h2>
-					<input type="checkbox" name="pool" value="yes" id="pool">
-					<label for="pool">Бассейн</label>
-					<input type="checkbox" name="parking" value="yes" id="parking">
-					<label for="parking">Парковка</label>
-					<input type="checkbox" name="wifi" value="yes" id="wifi">
-					<label for="wifi">Wi-Fi</label>
-				</div>
+		<section class="row form-area">
+			<div class="col-md-12">
+				<form action="#" method="post">
+					<div class="col-md-3 list-left">
+						<h2>Инфраструктура:</h2>
+						<ul>
+							<li><input type="checkbox" name="pool" value="yes" id="pool">
+								<label for="pool">Бассейн</label></li>
+							<li><input type="checkbox" name="parking" value="yes" id="parking">
+								<label for="parking">Парковка</label></li>
+							<li><input type="checkbox" name="wifi" value="yes" id="wifi">
+								<label for="wifi">Wi-Fi</label></li>
+					    </ul>
+					</div>
 
-				<div>
-					<h2>Тип жилья:</h2>
-					<input type="checkbox" name="hotel" value="yes" id="hotel">
-					<label for="hotel">Гостинница</label>
-					<input type="checkbox" name="motel" value="yes" id="motel">
-					<label for="motel">Мотель</label>
-					<input type="checkbox" name="appartaments" value="yes" id="appartaments">
-					<label for="appartaments">Аппартаменты</label>
-				</div>
+					<div class="col-md-3 list-right">
+						<h2>Тип жилья:</h2>
+						<ul>
+							<li><input type="checkbox" name="hotel" value="yes" id="hotel">
+								<label for="hotel">Гостинница</label></li>
+							<li><input type="checkbox" name="motel" value="yes" id="motel">
+								<label for="motel">Мотель</label></li>
+							<li><input type="checkbox" name="appartaments" value="yes" id="appartaments">
+								<label for="appartaments">Аппартаменты</label></li>
+						</ul>
+					</div>
 
-				<div>
-					<span><strong>Стоимость в сутки (р):</strong></span>
-					<input type="range" name="price" min="0" max="30">
-					<button type="submit">Показать</button>
-				</div>
-			</form>
+					<div class="col-md-6">
+						<span><strong>Стоимость в сутки (р):</strong></span>
+						<input type="range" name="price" min="0" max="30">
+						<button type="submit">Показать</button>
+					</div>
+				</form>
+			</div>
 		</section>
 
 		<section>
@@ -142,20 +149,22 @@
 		</section>
 	</main>
 
-	<footer>
-		<div>
-			<a href="$"><strong>#visitsedona</strong></a>
+	<footer class="row">
+		<div class="col-md-4 footer-left">
+			<a href="#">#visitsedona</a>
 		</div>
 
-		<div>
-			<a href="#">twitter</a>
-			<a href="#">facebook</a>
-			<a href="#">youtube</a>
+		<div class="col-md-4 footer-center">
+			<a class="twitter" href="#">twitter</a>
+			<a class="fb" href="#">facebook</a>
+			<a class="youtube" href="#">youtube</a>
 		</div>
 
-		<div>
-			<span>Website by</span>
-			<a href="#">http://htmlacademy.ru</a>
+		<div class="col-md-4 footer-right">
+			<div class="container-footer">
+				<span>Website by</span>
+				<a href="#">http://htmlacademy.ru</a>
+			</div>
 		</div>
 	</footer>
 </body>
