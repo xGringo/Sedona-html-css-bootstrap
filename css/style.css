@@ -676,3 +676,23 @@ header .logo-container {
     line-height: 21px;
     font-weight: 100;
 }
+
+/*======================= checkboxes =========================*/
+
+.form-area input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox'] + label span {
+    display: block;
+    width: 26px;
+    height: 22px;
+    background: url(../img/checkbox_sprite.png) -15px -67px no-repeat;
+    float: left;
+}
+
+input[type='checkbox']:checked + label span {
+    width: 26px;
+    height: 22px;
+    background: url(../img/checkbox_sprite.png) -15px -15px no-repeat;
+}
