@@ -23,12 +23,12 @@
 
 	<main>
 		<section class="row form-area">
-			<div class="col-md-12">
+			
 				<form action="#" method="post">
-					<div class="col-md-3 list-left">
+					<div class="col-md-3 col-md-offset-1 list-left">
 						<h2>Инфраструктура:</h2>
 						<ul>
-							<li><input type="checkbox" name="pool" value="yes" id="pool">
+							<li><input type="checkbox" name="pool" value="yes" id="pool" checked>
 								<label for="pool"><span></span>Бассейн</label></li>
 							<li><input type="checkbox" name="parking" value="yes" id="parking">
 								<label for="parking"><span></span>Парковка</label></li>
@@ -40,22 +40,26 @@
 					<div class="col-md-3 list-right">
 						<h2>Тип жилья:</h2>
 						<ul>
-							<li><input type="checkbox" name="hotel" value="yes" id="hotel">
+							<li><input type="checkbox" name="hotel" value="yes" id="hotel" checked>
 								<label for="hotel"><span></span>Гостинница</label></li>
-							<li><input type="checkbox" name="motel" value="yes" id="motel">
+							<li><input type="checkbox" name="motel" value="yes" id="motel" checked>
 								<label for="motel"><span></span>Мотель</label></li>
-							<li><input type="checkbox" name="appartaments" value="yes" id="appartaments">
+							<li><input type="checkbox" name="appartaments" value="yes" id="appartaments" checked>
 								<label for="appartaments"><span></span>Аппартаменты</label></li>
 						</ul>
 					</div>
 
-					<div class="col-md-6">
-						<span><strong>Стоимость в сутки (р):</strong></span>
+					<div class="col-md-3 col-md-offset-1 price-range">
+						<h2>Стоимость в сутки (р):</h2>
+						<div class="price-value">
+							<span>от 0</span>
+							<span>до 3000</span>
+						</div>
 						<input type="range" name="price" min="0" max="30">
 						<button type="submit">Показать</button>
 					</div>
 				</form>
-			</div>
+		
 		</section>
 
 		<section>
