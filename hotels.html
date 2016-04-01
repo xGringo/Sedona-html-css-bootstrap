@@ -6,7 +6,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/range-slider.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script>
+	  $(function() {
+	    $( "#slider-range" ).slider({
+	      step: 50,
+	      range: true,
+	      min: 0,
+	      max: 3000,
+	      values: [ 0, 2500 ],
+	      slide: function( event, ui ) {
+	        $( "#amount-1" ).val( "ОТ " + ui.values[ 0 ]  );
+	        $( "#amount-2" ).val( " ДО " + ui.values[ 1 ] );
+	      }
+	    });
+	    $( "#amount-1" ).val( "ОТ " + $( "#slider-range" ).slider( "values", 0 ) );
+
+	    $( "#amount-2" ).val(" ДО " + $( "#slider-range" ).slider( "values", 1 ) );
+	  });
+    </script>
+
 </head>
 <body class="container">
 	<header class="row">
@@ -23,7 +46,7 @@
 
 	<main>
 		<section class="row form-area">
-			
+			<div class="col-md-12">
 				<form action="#" method="post">
 					<div class="col-md-3 col-md-offset-1 list-left">
 						<h2>Инфраструктура:</h2>
@@ -49,18 +72,34 @@
 						</ul>
 					</div>
 
-					<div class="col-md-3 col-md-offset-1 price-range">
+					<div class="col-md-4 col-md-offset-1 price-range">
+					
 						<h2>Стоимость в сутки (р):</h2>
 						<div class="price-value">
-							<span>от 0</span>
-							<span>до 3000</span>
+							<input type="text" id="amount-1" readonly">
+							<input type="text" id="amount-2" readonly">
 						</div>
-						<input type="range" name="price" min="0" max="30">
-						<button type="submit">Показать</button>
+
+						<div class="slider-container">
+							<div id="slider-range"></div>
+						</div>
+							
+						<button class="submit-btn" type="submit">Показать</button>
+					
+						
 					</div>
 				</form>
-		
+			</div>
 		</section>
+
+		<!-- SCRIPTS -->
+
+		
+		
+
+		
+		
+		<!-- END SCRIPTS -->
 
 		<section>
 			<h3>Найдено: 3</h3>
