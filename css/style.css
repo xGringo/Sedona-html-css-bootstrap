@@ -212,7 +212,7 @@
 
 /*========================= end sprite =========================================*/
 
-.container {
+body.container {
     font-family: 'PT Sans', Arial, sans-serif;
     color: #000000;
     padding-left: 0;
@@ -244,6 +244,7 @@ header.row li {
 header.row a {
     font-size: 14px;
     line-height: 26px;
+    font-family: 'PT Sans', Arial, sans-serif;
     text-decoration: none;
     color: #000000;
     font-weight: bold;
@@ -638,18 +639,28 @@ header .logo-container {
 }
 
 /*========================================*/
-
+/*
 * {
     outline: 1px solid red;
-}
+}*/
 
 /*====================================*/
 /*================ PAGE 2 ============*/
 
-.form-area {
+/*.form-area {
     background: url(../img/filler_bg.jpg) no-repeat 80% 17%;
     color: #ffffff;
     text-transform: uppercase;
+    margin-top: -15px;
+}
+*/
+.form-area-inner {
+    width: 100%;
+    height: 218px;
+    background: url(../img/filler_bg.jpg) no-repeat 80% 17%;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: -15px;
 }
 
 .list-left,
@@ -677,6 +688,7 @@ header .logo-container {
     font-weight: 400;
     margin: 0;
     margin-bottom: 25px;
+    font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .list-left label,
@@ -684,6 +696,8 @@ header .logo-container {
     font-size: 14px;
     line-height: 21px;
     font-weight: 100;
+    margin-bottom: 0;
+    font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .price-range {
@@ -701,6 +715,7 @@ header .logo-container {
 }
 
 .price-value {
+    position: relative;
     width: 316px;
     height: 34px;
     border: 2px solid #ffffff;
@@ -725,18 +740,18 @@ header .logo-container {
 }
 
 .price-value input[type="text"]:last-child {
-    position: relative;
     margin-right: 0;
 }
 
-.price-value input[type="text"]:last-child::before {
+.price-value::before {
     content: '';
     position: absolute;
     display: block;
     height: 20px;
     width: 2px;
     background-color: #ffffff;
-    left: -60px;
+    left: 150px;
+    top: 5px;
 }
 
 .slider-container {
@@ -754,9 +769,14 @@ header .logo-container {
     text-transform: uppercase;
     background: transparent;
     margin-top: 32px;
-    margin-bottom: 37px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-bottom: 29px;
+    margin-right: 50%;
+    margin-left: 33%;
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.list span {
+    margin-right: 10px;
 }
 
 /*======================= checkboxes =========================*/
@@ -777,4 +797,197 @@ input[type='checkbox']:checked + label span {
     width: 26px;
     height: 22px;
     background: url(../img/checkbox_sprite.png) -15px -15px no-repeat;
+}
+
+/*================ kroshki ===============================*/
+
+.second-navigation {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.find {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.find h3 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.sort {
+    padding: 0;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.bread-crumbs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bread-crumbs li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.sort-title {
+    margin-right: 38px;
+}
+
+.bread-crumbs a {
+    border-bottom: 1px dotted #81b3d2;
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.bread-crumbs a:hover {
+    border-bottom: none;
+    color: #81b3d2;
+}
+
+.arrows {
+    padding: 0;
+    padding-left: 68px;
+    padding-top: 35px;
+}
+
+.arrows a {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    margin-right: 10px;
+}
+
+.arrows a:last-child {
+    margin-right: 0;
+}
+
+.arrow-up {
+    background: url(../img/spritesheet.png) no-repeat;
+    width: 11px;
+    height: 10px;
+    background-position: -15px -920px;
+}
+
+.arrow-down {
+    background: url(../img/spritesheet.png) no-repeat;
+    width: 11px;
+    height: 10px;
+    background-position: -15px -236px;
+}
+
+/*======================= articles =========================*/
+
+.pict {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.booking {
+    padding: 0;
+    padding-top: 26px;
+    padding-bottom: 30px;
+}
+
+.booking h1 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-family: 'PT Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+.booking-price span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: 'PT Sans', Arial, sans-serif;
+    margin-right: 40px;
+    margin-top: 9px;
+    margin-bottom: 8px;
+}
+
+.booking-price span:last-child {
+    margin-right: 0;
+}
+
+.booking-btn a {
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    font-family: 'PT Sans', Arial, sans-serif;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 6px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.booking-btn a:last-child {
+    margin-right: 0;
+}
+
+.btn-information {
+    background-color: #81b3d2;
+}
+
+.btn-submit {
+    background-color: #766357;
+}
+
+.raiting {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+}
+
+.stars-value {
+     font-size: 0;
+     text-align: right;
+     margin-bottom: 50px;
+}
+
+.stars-value .star {
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    background: url(../img/blue_star.png) no-repeat;
+    margin-right: 5px;
+}
+
+.stars-value .star:last-child {
+    margin-right: 0;
+}
+
+.raiting span {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 100;
+    font-family: 'PT Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-right: 15px;
 }

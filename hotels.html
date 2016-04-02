@@ -46,11 +46,11 @@
 
 	<main>
 		<section class="row form-area">
-			<div class="col-md-12">
+			<div class="form-area-inner col-md-12">
 				<form action="#" method="post">
 					<div class="col-md-3 col-md-offset-1 list-left">
 						<h2>Инфраструктура:</h2>
-						<ul>
+						<ul class="list">
 							<li><input type="checkbox" name="pool" value="yes" id="pool" checked>
 								<label for="pool"><span></span>Бассейн</label></li>
 							<li><input type="checkbox" name="parking" value="yes" id="parking">
@@ -62,7 +62,7 @@
 
 					<div class="col-md-3 list-right">
 						<h2>Тип жилья:</h2>
-						<ul>
+						<ul class="list">
 							<li><input type="checkbox" name="hotel" value="yes" id="hotel" checked>
 								<label for="hotel"><span></span>Гостинница</label></li>
 							<li><input type="checkbox" name="motel" value="yes" id="motel" checked>
@@ -101,92 +101,112 @@
 		
 		<!-- END SCRIPTS -->
 
-		<section>
-			<h3>Найдено: 3</h3>
-			<span>Сортировка:</span>
+		<section class="row second-navigation">
+			<div class="col-md-2 col-md-offset-1 find">
+				<h3>Найдено: 3</h3>
+			</div>
 
-			<nav>
-				<ul>
-					<li><a href="#">По цене</a></li>
-					<li><a href="#">По типу</a></li>
-					<li><a href="#">По рейтингу</a></li>
-				</ul>
-			</nav>
+			<div class="col-md-5 sort">
 
-			<div>
-				<a href="#">Вверх</a>
-				<a href="#">Вниз</a>
+				<nav>
+					<ul class="bread-crumbs"><!--
+						--><li class="sort-title">Сортировка:</li><!--
+						--><li><a href="#">По цене</a></li><!--
+						--><li><a href="#">По типу</a></li><!--
+						--><li><a href="#">По рейтингу</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="col-md-1 col-md-offset-2 arrows">
+				<a class="arrow-up" href="#">Вверх</a><!--
+				--><a class="arrow-down" href="#">Вниз</a>
 			</div>
 
 		</section>
 
-		<section>
-			<article>
-				<div>
+		<section class="clearfix">
+			<article class="row">
+				<div class="col-md-2 col-md-offset-1 pict">
 					<img src="img/post_pic_1.jpg" alt="Amara resort & spa" width="135" height="90">
 				</div>
 
-				<div>
+				<div class="col-md-4 booking">
 					<h1>Amara resort & spa</h1>
-					<div>
-						<span>Гостинница</span>
-						<span>от 3500 р.</span>
+					<div class="booking-price">
+						<span>Гостиница</span><!--
+					 --><span>от 3500 р.</span>
 					</div>
 
-					<div>
-						<a href="#">Подробнее</a>
-						<a href="#">Забронировать</a>
+					<div class="booking-btn">
+					    <a class="btn-information" href="#">Подробнее</a><!--
+					 --><a class="btn-submit" href="#">Забронировать</a>
 					</div>
 				</div>
 
-				<div>
-					<span>Рейтинг 8,5</span>
+				<div class="col-md-2 col-md-offset-2 raiting">
+					<div class="stars-value">
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star"></div>
+					</div>
+					<span>Рейтинг: 8,5</span>
 				</div>
 			</article>
 
-			<article>
-				<div>
+			<article class="row">
+				<div class="col-md-2 col-md-offset-1 pict">
 					<img src="img/post_pic_2.jpg" alt="Desrt quail inn" width="135" height="90">
 				</div>
 
-				<div>
+				<div class="col-md-4 booking">
 					<h1>Desrt quail inn</h1>
-					<div>
+					<div class="booking-price">
 						<span>Мотель</span>
 						<span>от 2000 р.</span>
 					</div>
 
-					<div>
-						<a href="#">Подробнее</a>
-						<a href="#">Забронировать</a>
+					<div class="booking-btn">
+						<a class="btn-information" href="#">Подробнее</a>
+						<a class="btn-submit" href="#">Забронировать</a>
 					</div>
 				</div>
 
-				<div>
-					<span>Рейтинг 8,9</span>
+				<div class="col-md-2 col-md-offset-2 raiting">
+					<div class="stars-value">
+						<div class="star"></div>
+						<div class="star"></div>
+					</div>
+					<span>Рейтинг: 8,9</span>
 				</div>
 			</article>
 
 			<article>
-				<div>
+				<div class="col-md-2 col-md-offset-1 pict">
 					<img src="img/post_pic_3.jpg" alt="Villas at Poko Diablo" width="135" height="90">
 				</div>
 
-				<div>
+				<div class="col-md-4 booking">
 					<h1>Villas at Poko Diablo</h1>
-					<div>
+					<div class="booking-price">
 						<span>Аппартаменты</span>
 						<span>от 4000 р.</span>
 					</div>
 
-					<div>
-						<a href="#">Подробнее</a>
-						<a href="#">Забронировать</a>
+					<div class="booking-btn">
+						<a class="btn-information" href="#">Подробнее</a>
+						<a class="btn-submit" href="#">Забронировать</a>
 					</div>
 				</div>
 
-				<div>
-					<span>Рейтинг 9,2</span>
+				<div class="col-md-2 col-md-offset-2 raiting">
+					<div class="stars-value">
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star"></div>
+					</div>
+					<span>Рейтинг: 9,2</span>
 				</div>
 			</article>
 		</section>
