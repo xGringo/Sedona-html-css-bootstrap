@@ -5,7 +5,7 @@
 	<title>Hotels</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/range-slider.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -33,13 +33,13 @@
 </head>
 <body class="container">
 	<header class="row">
-		<nav class="col-md-12">
+		<nav class="col-md-12 main-navigation">
 			<ul>
-				<li class="col-md-2 col-md-offset-1 mobile-hide"><a href="#">Информация</a></li>
+				<li class="col-md-2 col-md-offset-1 mobile-hide"><a href="index.html">Информация</a></li>
 				<li class="col-md-2 mobile-hide"><a href="#">Фото и видео</a></li>
-				<li class="col-md-2 logo-container mobile-hide"><img class="logo" src="img/logo.png" alt=""></li>
+				<li class="col-md-2 logo-container mobile-hide"><a href="index.html"><img class="logo" src="img/logo.png" alt=""></a></li>
 				<li class="col-md-2 mobile-hide"><a href="#">Карта штата</a></li>
-				<li class="col-md-2 mobile-hide"><a href="#">Гостинницы</a></li>
+				<li class="col-md-2 mobile-hide"><a href="hotels.html" class="active-link">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -111,7 +111,7 @@
 				<nav>
 					<ul class="bread-crumbs"><!--
 						--><li class="sort-title">Сортировка:</li><!--
-						--><li><a href="#">По цене</a></li><!--
+						--><li><a href="#" class="active-sort">По цене</a></li><!--
 						--><li><a href="#">По типу</a></li><!--
 						--><li><a href="#">По рейтингу</a></li>
 					</ul>
@@ -120,19 +120,19 @@
 
 			<div class="col-md-1 col-md-offset-2 arrows">
 				<a class="arrow-up" href="#">Вверх</a><!--
-				--><a class="arrow-down" href="#">Вниз</a>
+				--><a class="arrow-down active-down" href="#">Вниз</a>
 			</div>
 
 		</section>
 
-		<section class="clearfix">
-			<article class="row">
+		<section>
+			<article class="row article">
 				<div class="col-md-2 col-md-offset-1 pict">
 					<img src="img/post_pic_1.jpg" alt="Amara resort & spa" width="135" height="90">
 				</div>
 
 				<div class="col-md-4 booking">
-					<h1>Amara resort & spa</h1>
+					<h1><a href="#">Amara resort & spa</a></h1>
 					<div class="booking-price">
 						<span>Гостиница</span><!--
 					 --><span>от 3500 р.</span>
@@ -155,21 +155,21 @@
 				</div>
 			</article>
 
-			<article class="row">
+			<article class="row article">
 				<div class="col-md-2 col-md-offset-1 pict">
 					<img src="img/post_pic_2.jpg" alt="Desrt quail inn" width="135" height="90">
 				</div>
 
 				<div class="col-md-4 booking">
-					<h1>Desrt quail inn</h1>
+					<h1><a href="#">Desrt quail inn</a></h1>
 					<div class="booking-price">
 						<span>Мотель</span>
 						<span>от 2000 р.</span>
 					</div>
 
 					<div class="booking-btn">
-						<a class="btn-information" href="#">Подробнее</a>
-						<a class="btn-submit" href="#">Забронировать</a>
+						<a class="btn-information" href="#">Подробнее</a><!--
+					--><a class="btn-submit" href="#">Забронировать</a>
 					</div>
 				</div>
 
@@ -182,21 +182,21 @@
 				</div>
 			</article>
 
-			<article>
+			<article class="row article">
 				<div class="col-md-2 col-md-offset-1 pict">
 					<img src="img/post_pic_3.jpg" alt="Villas at Poko Diablo" width="135" height="90">
 				</div>
 
 				<div class="col-md-4 booking">
-					<h1>Villas at Poko Diablo</h1>
+					<h1><a href="#">Villas at Poko Diablo</a></h1>
 					<div class="booking-price">
 						<span>Аппартаменты</span>
 						<span>от 4000 р.</span>
 					</div>
 
 					<div class="booking-btn">
-						<a class="btn-information" href="#">Подробнее</a>
-						<a class="btn-submit" href="#">Забронировать</a>
+						<a class="btn-information" href="#">Подробнее</a><!--
+					 --><a class="btn-submit" href="#">Забронировать</a>
 					</div>
 				</div>
 

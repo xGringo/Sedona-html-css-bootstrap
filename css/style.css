@@ -212,13 +212,6 @@
 
 /*========================= end sprite =========================================*/
 
-body.container {
-    font-family: 'PT Sans', Arial, sans-serif;
-    color: #000000;
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .row {
     margin: 0 auto;
 }
@@ -244,7 +237,6 @@ header.row li {
 header.row a {
     font-size: 14px;
     line-height: 26px;
-    font-family: 'PT Sans', Arial, sans-serif;
     text-decoration: none;
     color: #000000;
     font-weight: bold;
@@ -261,6 +253,26 @@ header .logo-container {
     left: 15%;
     top: -15px;
     z-index: 99;
+}
+
+.main-navigation a:hover {
+    color: #81b3d2;
+}
+
+.main-navigation a:active {
+    color: #cacaca;
+}
+
+.main-navigation .active-link {
+    color: #766357;
+}
+
+.main-navigation .active-link:hover {
+    color: #604e43;
+}
+
+.main-navigation .active-link:active {
+    color: #dbd8d5;
 }
 
 .col-md-12 {
@@ -459,6 +471,7 @@ header .logo-container {
 }
 
 .propose {
+    position: relative;
     text-transform: uppercase;
     text-align: center;
     padding: 0;
@@ -488,10 +501,11 @@ header .logo-container {
     color: #ffffff;
     background-color: #766357;
     text-decoration: none;
-    padding-top: 25px;
-    padding-bottom: 28px;
+    padding-top: 26px;
+    padding-bottom: 26px;
     outline: none;
     border: none;
+    transition: background-color 0.1s, color 0.1s;
 }
 
 .propose a:hover {
@@ -500,6 +514,7 @@ header .logo-container {
 
 .propose a:active {
     background-color: #503e33;
+    color: #928a85;
 }
 
 .map {
@@ -647,17 +662,10 @@ header .logo-container {
 /*====================================*/
 /*================ PAGE 2 ============*/
 
-/*.form-area {
-    background: url(../img/filler_bg.jpg) no-repeat 80% 17%;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-top: -15px;
-}
-*/
 .form-area-inner {
     width: 100%;
     height: 218px;
-    background: url(../img/filler_bg.jpg) no-repeat 80% 17%;
+    background: url(../img/filler_bg.jpg) no-repeat 60% 0;
     color: #ffffff;
     text-transform: uppercase;
     margin-top: -15px;
@@ -685,10 +693,9 @@ header .logo-container {
 .list-right h2 {
     font-size: 16px;
     line-height: 21px;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
     margin-bottom: 25px;
-    font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .list-left label,
@@ -697,7 +704,6 @@ header .logo-container {
     line-height: 21px;
     font-weight: 100;
     margin-bottom: 0;
-    font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .price-range {
@@ -709,7 +715,7 @@ header .logo-container {
 .price-range h2 {
     font-size: 16px;
     line-height: 21px;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
     margin-bottom: 15px;
 }
@@ -772,7 +778,12 @@ header .logo-container {
     margin-bottom: 29px;
     margin-right: 50%;
     margin-left: 33%;
-    font-family: 'PT Sans', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .list span {
@@ -817,7 +828,6 @@ input[type='checkbox']:checked + label span {
     line-height: 26px;
     text-transform: uppercase;
     margin: 0;
-    font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .sort {
@@ -853,13 +863,22 @@ input[type='checkbox']:checked + label span {
 }
 
 .bread-crumbs a:hover {
+    color: #81b3d2;
+}
+
+.bread-crumbs a:active {
+    color: #000000;
+    border-bottom: none;
+}
+
+.bread-crumbs .active-sort {
     border-bottom: none;
     color: #81b3d2;
 }
 
 .arrows {
     padding: 0;
-    padding-left: 68px;
+    padding-left: 60px;
     padding-top: 35px;
 }
 
@@ -881,7 +900,49 @@ input[type='checkbox']:checked + label span {
     background-position: -15px -920px;
 }
 
+.arrow-up:hover {
+    background: url(../img/spritesheet.png) no-repeat;
+    width: 11px;
+    height: 10px;
+    background-position: -15px -156px;
+}
+
+.arrow-up:active {
+    background: url(../img/spritesheet.png) no-repeat;
+    width: 11px;
+    height: 10px;
+    background-position: -15px -276px;
+}
+
 .arrow-down {
+    background: url(../img/spritesheet.png) no-repeat;
+    width: 11px;
+    height: 10px;
+    background-position: -15px -880px;
+}
+
+.arrow-down:hover {
+    background: url(../img/spritesheet.png) no-repeat;
+    width: 11px;
+    height: 10px;
+    background-position: -15px -196px;
+}
+
+.arrow-down:active {
+    background: url(../img/spritesheet.png) no-repeat;
+    width: 11px;
+    height: 10px;
+    background-position: -15px -236px;
+}
+
+.arrows .active-up {
+    background: url(../img/spritesheet.png) no-repeat;
+    width: 11px;
+    height: 10px;
+    background-position: -15px -276px;
+}
+
+.arrows .active-down {
     background: url(../img/spritesheet.png) no-repeat;
     width: 11px;
     height: 10px;
@@ -907,8 +968,23 @@ input[type='checkbox']:checked + label span {
     font-weight: bold;
     line-height: 26px;
     text-transform: uppercase;
-    font-family: 'PT Sans', Arial, sans-serif;
     margin: 0;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.1s;
+}
+
+h1 a:hover {
+    color: #95bed8;
+    text-decoration: none;
+}
+
+h1 a:active {
+    color: #cacaca;
+    text-decoration: none;
 }
 
 .booking-price span {
@@ -918,7 +994,6 @@ input[type='checkbox']:checked + label span {
     line-height: 21px;
     font-weight: 100;
     text-transform: uppercase;
-    font-family: 'PT Sans', Arial, sans-serif;
     margin-right: 40px;
     margin-top: 9px;
     margin-bottom: 8px;
@@ -935,7 +1010,6 @@ input[type='checkbox']:checked + label span {
     font-size: 14px;
     font-weight: bold;
     line-height: 21px;
-    font-family: 'PT Sans', Arial, sans-serif;
     padding-left: 17px;
     padding-right: 17px;
     padding-top: 5px;
@@ -951,10 +1025,30 @@ input[type='checkbox']:checked + label span {
 
 .btn-information {
     background-color: #81b3d2;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.btn-information:hover {
+    background-color: #669ec0;
+}
+
+.btn-information:active {
+    background-color: #5496bd;
+    color: #94b9d2;
 }
 
 .btn-submit {
     background-color: #766357;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.btn-submit:hover {
+    background-color: #604e43;
+}
+
+.btn-submit:active {
+    background-color: #503e33;
+    color: #928a85;
 }
 
 .raiting {
@@ -987,7 +1081,217 @@ input[type='checkbox']:checked + label span {
     font-size: 14px;
     line-height: 21px;
     font-weight: 100;
-    font-family: 'PT Sans', Arial, sans-serif;
     text-transform: uppercase;
     margin-right: 15px;
+}
+
+.article {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/*====================== всплывающая форма ==========================*/
+    
+
+.search-form {
+    display: none;
+    position: absolute;
+    top: 310px;
+    left: 0;
+    width: 100%;
+    height: 397px;
+    padding: 55px;
+    background-color: #ffffff;
+    z-index: 999;
+    -webkit-box-shadow: 0px 9px 44px -8px rgba(0,0,0,0.62);
+       -moz-box-shadow: 0px 9px 44px -8px rgba(0,0,0,0.62);
+            box-shadow: 0px 9px 44px -8px rgba(0,0,0,0.62);
+}
+
+.search-form label {
+    text-transform: uppercase;
+}
+
+.search-form .date1 {
+    margin-right: 18px;
+}
+
+.search-form .date2 {
+    margin-right: 15px;
+}
+
+.search-form input[type="text"] {
+    width: 347px;
+    height: 38px;
+    margin-bottom: 28px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'PT Sans', Arial, sans-serif;
+    padding-left: 15px;
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+.search-form input[type="text"]:hover {
+    background-color: #ebebeb;
+}
+
+.search-form input[type="text"]:focus {
+    border: 2px solid #ebebeb;
+    background-color: #ffffff;
+}
+
+.text-input {
+    position: relative;
+}
+
+.date-icon {
+    position: absolute;
+    width: 21px;
+    height: 22px;
+    left: 425px;
+    top: 8px;
+    background: url(../img/spritesheet.png) no-repeat;
+    background-position: -15px -420px;
+    cursor: pointer;
+}
+
+.date-icon:hover {
+    background: url(../img/spritesheet.png) no-repeat;
+    width: 21px;
+    height: 22px;
+    background-position: -15px -472px;
+    cursor: pointer;
+}
+
+.date-icon:active {
+    background: url(../img/spritesheet.png) no-repeat;
+    width: 21px;
+    height: 22px;
+    background-position: -15px -524px;
+}
+
+.minus-area {
+    margin-left: 36px;
+}
+
+.number-input-right {
+    margin-left: 42px;
+}
+
+.number-input label {
+    margin-top: 10px;
+}
+
+.minus-area, .plus-area {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #f2f2f2;
+}
+
+.minus-area::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 5px;
+    background: url(../img/spritesheet.png) no-repeat;
+    background-position: -15px -1335px;
+    left: 13px;
+    top: 50%;
+}
+
+.minus-area:hover::before {
+    background-position: -15px -1269px;
+}
+
+.minus-area:active::before {
+    background-position: -15px -1302px;
+}
+
+.minus-area:hover, .plus-area:hover {
+    cursor: pointer;
+}
+
+.minus {
+    margin-left: 20px;
+}
+
+.plus-area::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(../img/spritesheet.png) no-repeat;
+    background-position: -15px -1554px;
+    left: 13px;
+    top: 16px;
+}
+
+.plus-area:hover::before {
+    background-position: -15px -1472px;
+}
+
+.plus-area:active::before {
+    background-position: -15px -1513px;
+}
+
+.search-form input[type="number"] {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #f2f2f2;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.number-input {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.find-hotel {
+    width: 100%;
+    margin-top: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: 'PT Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.find-hotel:hover {
+    background-color: #669ec0;
+}
+
+.find-hotel:active {
+    background-color: #5496bd;
+    color: #79a9c8;
+}
+
+/*===================== какая-то фигня со шрифтом ==============================*/
+body {
+    color: #000000;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: 'PT Sans', Arial, sans-serif;
 }

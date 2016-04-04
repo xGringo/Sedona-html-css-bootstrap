@@ -5,18 +5,19 @@
 	<title>Sedona</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body class="container">
 	<header class="row">
-		<nav class="col-md-12">
+		<nav class="col-md-12 main-navigation">
 			<ul>
-				<li class="col-md-2 col-md-offset-1 mobile-hide"><a href="#">Информация</a></li>
+				<li class="col-md-2 col-md-offset-1 mobile-hide"><a href="index.html" class="active-link">Информация</a></li>
 				<li class="col-md-2 mobile-hide"><a href="#">Фото и видео</a></li>
-				<li class="col-md-2 logo-container mobile-hide"><img class="logo" src="img/logo.png" alt=""></li>
+				<li class="col-md-2 logo-container mobile-hide"><a href="index.html"><img class="logo" src="img/logo.png" alt=""></a></li>
 				<li class="col-md-2 mobile-hide"><a href="#">Карта штата</a></li>
-				<li class="col-md-2 mobile-hide"><a href="#">Гостинницы</a></li>
+				<li class="col-md-2 mobile-hide"><a href="hotels.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -100,14 +101,55 @@
 			<div class="col-md-6 col-lg-offset-3 propose">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостинниц в Седоне</p>
-				<a href="#">Поиск гостинницы в Седоне</a>
+				<a href="#" id="search-hotel">Поиск гостиницы в Седоне</a>
+
+				<div class="search-form">
+					<form action="#" method="post">
+						<fieldset class="text-input">
+							<label for="arrive" class="date1">Дата заезда:</label>
+							<input type="text" name="Arriving date" id="arrive">
+							<div class="date-icon"></div>
+						</fieldset>
+						<fieldset class="text-input">
+							<label for="living" class="date2">Дата выезда:</label>
+							<input type="text" name="Living date" id="living">
+							<div class="date-icon"></div>
+						</fieldset>
+						<fieldset class="number-input">
+							<label for="adults">Взрослые:</label>
+							<div class="minus-area"></div><!--
+						--><input type="number" name="adults" id="adults"><!--
+						--><div class="plus-area"></div>
+						</fieldset>
+						<fieldset class="number-input number-input-right">
+							<label for="children">Дети:</label>
+							<div class="minus-area minus"></div><!--
+						--><input type="number" name="children" id="children"><!--
+						--><div class="plus-area"></div>
+						</fieldset>
+						
+
+						<button type="submit" class="find-hotel">Найти</button>
+					</form>
+				</div>
 			</div>
+
+			
 		</section>
 	</main>
 
+	<script>
+		$(document).ready(function() {
+			$('#search-hotel').click(function(evt) {
+				evt.preventDefault();
+				$('.search-form').slideToggle(500);
+			}); // end click
+		}); // end ready
+	</script>
+
 	<section class="row">
 		<div class="map col-md-12">
-			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497989.5118889394!2d-112.00989298105118!3d34.91789851453591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1458123140724" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497989.5118889394!2d-112.00989298105118!3d34.91789851453591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1458123140724" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	</section>
 
