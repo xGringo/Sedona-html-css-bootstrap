@@ -7,70 +7,90 @@
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body class="container">
 	<header class="row">
-		<nav class="col-md-12 main-navigation">
+		<nav class="col-md-12 col-sm-12 col-xs-12 main-navigation">
 			<ul>
-				<li class="col-md-2 col-md-offset-1 mobile-hide"><a href="index.html" class="active-link">Информация</a></li>
-				<li class="col-md-2 mobile-hide"><a href="#">Фото и видео</a></li>
-				<li class="col-md-2 logo-container mobile-hide"><a href="index.html"><img class="logo" src="img/logo.png" alt=""></a></li>
-				<li class="col-md-2 mobile-hide"><a href="#">Карта штата</a></li>
-				<li class="col-md-2 mobile-hide"><a href="hotels.html">Гостиницы</a></li>
+				<li class="col-md-2 col-md-offset-1 col-sm-2 hidden-xs"><a href="index.html" class="active-link">Информация</a></li>
+				<li class="col-md-2 col-sm-3 hidden-xs"><a href="#">Фото и видео</a></li>
+				<li class="col-xs-offset-4 col-xs-4 col-sm-2 col-sm-offset-0 col-md-2 logo-container"><a href="index.html"><img class="logo" src="img/logo.png" alt=""></a></li>
+				<li class="col-xs-4 hidden-sm hidden-md hidden-lg pp"><img class="menu-icon" src="img/menu.png" alt=""></li>
+				<li class="col-md-2 col-sm-3 hidden-xs"><a href="#">Карта штата</a></li>
+				<li class="col-md-2 col-sm-2 hidden-xs"><a href="hotels.html">Гостиницы</a></li>
+			</ul>
+
+			<ul class="col-xs-12 hidden-sm hidden-md hidden-lg mobile-menu">
+				<li><a href="#">Карта штата</a><img class="close-icon" src="img/krestik.png" alt=""></li>
+				<li><a href="hotels.html">Гостиницы</a></li>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и видео</a></li>
 			</ul>
 		</nav>
 	</header>
-
+	<script>
+		$(document).ready(function() {
+			$('.menu-icon').click(function(evt) {
+				evt.preventDefault();
+				$('.mobile-menu').fadeToggle(200);
+			}); // end click
+			$('.close-icon').click(function(evt) {
+				evt.preventDefault();
+				$('.mobile-menu').fadeToggle(200);
+			}); // end click
+		}); // end ready
+	</script>
 	<main>
 		<section class="row">
-			<div class="title-background col-md-1">
-				<!-- здесь будет фон -->
+			<div class="title-background col-md-12 col-sm-12 col-xs-12">
+				<!-- здесь будет фон-->
 			</div>
 		</section>
 
 		<section class="row">
-			<div class="col-md-6 col-md-offset-3 slogan">
+			<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 slogan">
 				<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 				<span>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</span>
 			</div>
 		</section>
 
 		<section class="row">
-			<div class="col-md-4 feature-one">
+			<div class="col-md-4 col-sm-4 col-xs-12 feature-one">
 				<h2>Настоящий городок</h2>
 				<span>№1</span>
 				<p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
 			</div>
 
-			<div class="col-md-8 feature-one-pic">
+			<div class="col-md-8 col-sm-8 col-xs-12 feature-one-pic">
 				<img src="img/content_pic_1.jpg" alt="Городок Седона" width="800" height="255">
 			</div>
 		</section>
 
 		<section class="row">
-			<div class="col-md-4 trick-first trick">
+			<div class="col-md-4 col-sm-4 col-xs-12 trick-first trick">
 				<h2>Жильё</h2>
 				<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 			</div>
 
-			<div class="col-md-4 trick-second trick">
+			<div class="col-md-4 col-sm-4 col-xs-12 trick-second trick">
 				<h2>Еда</h2>
 				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 			</div>
 
-			<div class="col-md-4 trick-third trick">
+			<div class="col-md-4 col-sm-4 col-xs-12 trick-third trick">
 				<h2>Сувениры</h2>
 				<p>Не только китайского, но и местного производства!</p>
 			</div>
 		</section>
 
 		<section class="row">
-			<div class="col-md-8 feature-two-pic">
+			<div class="col-md-8 col-sm-8 col-xs-12 feature-two-pic">
 				<img src="img/content_pic_2.jpg" alt="Мост Дьявола" width="800" height="255">
 			</div>
 
-			<div class="col-md-4 feature-two">
+			<div class="col-md-4 col-sm-4 col-xs-12 feature-two">
 				<h2>Там есть мост дьявола</h2>
 				<span>№2</span>
 				<p>Да, по нему можно пройти! Если, конечно, вы осмелитесь!</p>
@@ -78,19 +98,19 @@
 		</section>
 
 		<section class="row">
-			<div class="col-md-4 feature feature-third">
+			<div class="col-md-4 col-sm-4 col-xs-12 feature feature-third">
 				<h2>Небольшая площадь</h2>
 				<span>№3</span>
 				<p>Все достопремичательности находятся очень близко</p>
 			</div>
 
-			<div class="col-md-4 feature feature-fourth">
+			<div class="col-md-4 col-sm-4 col-xs-12 feature feature-fourth">
 				<h2>Красивая дорога</h2>
 				<span>№4</span>
 				<p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
 			</div>
 
-			<div class="col-md-4 feature feature-fifth">
+			<div class="col-md-4 col-sm-4 col-xs-12 feature feature-fifth">
 				<h2>Мало туристов</h2>
 				<span>№5</span>
 				<p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -98,7 +118,7 @@
 		</section>
 
 		<section class="row">
-			<div class="col-md-6 col-lg-offset-3 propose">
+			<div class=" col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 propose">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостинниц в Седоне</p>
 				<a href="#" id="search-hotel">Поиск гостиницы в Седоне</a>
@@ -115,15 +135,15 @@
 							<input type="text" name="Living date" id="living">
 							<div class="date-icon"></div>
 						</fieldset>
-						<fieldset class="number-input">
+						<fieldset class="number-input number-input-left">
 							<label for="adults">Взрослые:</label>
-							<div class="minus-area"></div><!--
+							<div class="minus-area minus"></div><!--
 						--><input type="number" name="adults" id="adults"><!--
 						--><div class="plus-area"></div>
 						</fieldset>
 						<fieldset class="number-input number-input-right">
 							<label for="children">Дети:</label>
-							<div class="minus-area minus"></div><!--
+							<div class="minus-area minus minus_2"></div><!--
 						--><input type="number" name="children" id="children"><!--
 						--><div class="plus-area"></div>
 						</fieldset>
@@ -148,23 +168,23 @@
 	</script>
 
 	<section class="row">
-		<div class="map col-md-12">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497989.5118889394!2d-112.00989298105118!3d34.91789851453591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1458123140724" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="map col-md-12 col-sm-12 col-xs-12">
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497989.5118889394!2d-112.00989298105118!3d34.91789851453591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1458123140724" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 		</div>
 	</section>
 
 	<footer class="row">
-		<div class="col-md-4 footer-left">
+		<div class="col-md-4 col-sm-4 col-xs-12 footer-left">
 			<a href="#">#visitsedona</a>
 		</div>
 
-		<div class="col-md-4 footer-center">
+		<div class="col-md-4 col-sm-4 col-xs-12 footer-center">
 			<a class="twitter" href="#">twitter</a>
 			<a class="fb" href="#">facebook</a>
 			<a class="youtube" href="#">youtube</a>
 		</div>
 
-		<div class="col-md-4 footer-right">
+		<div class="col-md-4 col-sm-4 col-xs-12 footer-right">
 			<div class="container-footer">
 				<span>Website by</span>
 				<a href="#">http://htmlacademy.ru</a>
