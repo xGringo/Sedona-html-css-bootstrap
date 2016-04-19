@@ -109,9 +109,23 @@
 	    padding-left: 20px;
 	}
 
-	/*.container-footer {
-		margin: 0 auto;
-	}*/
+	.form-area-inner {
+		margin-top: 0;
+		padding-left: 2%;
+	}
+
+	.price-range {
+		padding-left: 2%;
+	}
+
+	.second-navigation,
+	.article {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+
+
+
 }
 
 /* Small Devices, Tablets */
@@ -140,7 +154,6 @@
 	}
 	
 	.menu-icon {
-		/*float: right;*/
 		cursor: pointer;
 		padding-right: 2%;
 	}
@@ -175,18 +188,7 @@
 
 	ul.mobile-menu li {
 		display: block;
-		/*width: 100%;*/
-		/*padding-top: 5px;
-		padding-bottom: 5px;*/
-		/*background-color: #81b3d2;*/
-		/*border-top: 2px solid #9ac2db;
-		border-bottom: 2px solid #678fa8;*/
-		/*text-align: center;*/
 	}
-
-	/*ul.mobile-menu li:hover {
-		background-color: #669ec0;
-	}*/
 
 	.mobile-menu li a {
 		width: 100%;
@@ -311,6 +313,139 @@
 		padding-bottom: 20px;
 	}
 
+	.form-area-inner {
+		margin-top: -5px;
+		/*min-height: 218px;*/
+	}
+
+	.price-value {
+		position: relative;
+		width: 100%;
+		padding-left: 15%;
+	}
+
+	.price-value::before {
+	    left: 50%;
+	}
+
+	.price-value input[type="text"] {
+	    display: inline-block;
+	    vertical-align: middle;
+	    width: 65px;
+	    font-size: 14px;
+	    line-height: 21px;
+	    font-weight: 100;
+	    /*margin-left: 20%;*/
+	    margin-bottom: 8px;
+	    outline: none;
+	    border: none;
+	    background: transparent;
+	}
+
+.price-value input[type="text"]:first-child {
+	    margin-left: 0;
+	}
+
+	#amount-2 {
+		position: absolute;
+		right: 15%;
+	}
+
+	.slider-container {
+	    width: 100%;
+	    margin-left: 18px;
+	    margin-top: 20px;
+	}
+
+	.submit-btn {
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+
+	.price-range h2 {
+		text-align: center;
+	}
+
+	.price-range {
+		padding-left: 10%;
+	}
+
+	.second-navigation,
+	.booking {
+		text-align: center;
+	}
+
+	.find,
+	.sort,
+	.pict {
+		padding-bottom: 0;
+	}
+
+	.pict {
+		text-align: center;
+	}
+
+	.pict img {
+		width: 50%;
+		height: 150px;
+	}
+
+	.list-left,
+	.list-right {
+		padding-left: 10%;
+	}
+
+	.search-form input[type="text"] {
+	    width: 69%;
+	    margin-left: 0;
+	}
+
+	.text-input .date1,
+	.text-input .date2 {
+		width: 30%;
+		margin: 0;
+	}
+
+	.text-input {
+		width: 100%;
+	}
+
+	.number-input-left {
+		width: 49%;
+	}
+	.number-input-right {
+		width: 49%;
+		margin-left: 1%;
+	}
+
+	.number-input label {
+		width: 39%;
+	}
+
+	.minus-area {
+		width: 19%;
+	}
+
+	#adults {
+		width: 19%;
+	}
+
+	#children {
+		width: 19%;
+	}
+
+	.plus-area {
+		width: 19%;
+	}
+
+	div.minus-area {
+		margin: 0;
+	}
+
+	div.minus_2 {
+		margin-left: -17%;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -343,6 +478,14 @@
 
 	.trick p {
 		padding-left: 24%;
+	}
+
+	.raiting {
+		display: none;
+	}
+
+	.booking {
+		width: 100%;
 	}
 
 }
